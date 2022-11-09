@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <img src="outdoor.jpg"  width="100%">       
+<img src="Fahad's family-2.gif"  width="100%"> 
+<script src="script.js"></script>
+<head>
+    <img src="accident.gif"  width="100%"> 
+</head>
+</head>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "style.css">
+    </head>
+    <body>
+        <section>
+            <img src="images/sky.jpg" id="stars">
+            <img src="images/pngegg.png" id="moon">
+            <img src="images/plane.png" id="plane">
+        </section>
+
+        <div class="sec"> 
+        <p>
+        <span class = "auto-type"> </span>
+        <h2 class = "text"
+             style = "color:white">
+             Produced By
+        </h2>
+        <p>         
+ 
+        </p>
+    </p>
+
+<!-- script initialization for autotype comment feature -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"> </script>
+
+<!-- script for autotype feature -->
+<script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Syed Fahad Rizwan","Dhabia Alhosani","Rama Alwidian","Aya Amine","Syed Fahad Rizwan"],
+        typeSpeed: 40,
+        backSpeed: 15,
+        loop: true
+    })
+</script>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let plane = document.getElementById('plane');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.top = value * 0.5 - 'px';
+                moon.style.top = value * 1.2 + 'px';
+                plane.style.left = (value-2000) * 1 + 'px';
+                plane.style.top = value * 1.2 - 'px';
+            })
+        </script>
+    </body>
+
+</html>
